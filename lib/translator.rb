@@ -20,6 +20,17 @@ def get_japanese_emoticon(path, emoticon)
 end
 
 
-def get_english_meaning
+def get_english_meaning(path, emoticon)
   # code goes here
+end 
+  load_library(path)["get_meaning"].each_pair do |key, value| 
+    if key == emoticon
+      return value
+    end
+  end
+   return "Sorry, that emoticon was not found"
+end
+
+get_japanese_emoticon("./lib/emoticons.yml", "=D")
+
 end
