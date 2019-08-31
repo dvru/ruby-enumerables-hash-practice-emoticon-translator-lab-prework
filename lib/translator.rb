@@ -30,5 +30,3 @@ def get_english_meaning(path, emoticon)
 end
 
 get_japanese_emoticon("./lib/emoticons.yml", "=D")
-
-end
