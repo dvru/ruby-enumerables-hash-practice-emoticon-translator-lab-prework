@@ -1,4 +1,5 @@
 # require modules here
+require "yaml"
 
 def load_library(j_emotes)
   transl = {"get_meaning" => {}, "get_emoticon" => {}}
