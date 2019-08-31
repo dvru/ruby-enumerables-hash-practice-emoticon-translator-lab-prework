@@ -10,8 +10,14 @@ def load_library(j_emotes)
   return transl
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, emoticon)
   # code goes here
+  load_library(path)["get_emoticon"].each_pair do |key, value| 
+    if key == emoticon
+      return value
+    end
+  end
+   return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
