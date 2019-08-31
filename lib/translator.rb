@@ -21,8 +21,6 @@ end
 
 
 def get_english_meaning(path, emoticon)
-  # code goes here
-end 
   load_library(path)["get_meaning"].each_pair do |key, value| 
     if key == emoticon
       return value
